@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella Studio – Güzellik & Bakım Salonu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <span class="logo">Bella <span>Studio</span></span>
+  <ul>
+    <li><a href="#hizmetler" data-i18n="nav.services">Hizmetler</a></li>
+    <li><a href="#fiyatlar" data-i18n="nav.prices">Fiyatlar</a></li>
+    <li><a href="#galeri" data-i18n="nav.gallery">Galeri</a></li>
+    <li><a href="#yorumlar" data-i18n="nav.reviews">Yorumlar</a></li>
+    <li><a href="#randevu" class="nav-cta" data-i18n="nav.book">Randevu Al</a></li>
+  </ul>
+
+  <!-- Language Switcher -->
+  <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+      <span id="langCurrent">TR</span>
+      <svg class="chevron" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </button>
+    <ul class="lang-dropdown" id="langDropdown" role="listbox">
+      <li role="option" data-lang="tr" class="active">
+        <span class="lang-flag">🇹🇷</span> Türkçe
+      </li>
+      <li role="option" data-lang="en">
+        <span class="lang-flag">🇬🇧</span> English
+      </li>
+      <li role="option" data-lang="de">
+        <span class="lang-flag">🇩🇪</span> Deutsch
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-inner">
+    <span class="hero-badge" data-i18n="hero.badge">✦ Premium Güzellik Deneyimi ✦</span>
+    <h1 data-i18n-html="hero.title">Güzelliğinizi<br><em>Keşfedin</em></h1>
+    <p data-i18n="hero.desc">Profesyonel ekibimizle saç, cilt ve nail art hizmetlerinde kendinizi en iyi hissettirin.</p>
+    <a href="#randevu" class="btn-primary" data-i18n="hero.btn.primary">Randevu Al</a>
+    <a href="#hizmetler" class="btn-outline" data-i18n="hero.btn.outline">Hizmetleri Gör</a>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<section id="stats">
+  <div class="stat">
+    <div class="stat-num">8+</div>
+    <div class="stat-lbl" data-i18n="stats.years">Yıllık Deneyim</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">3.200+</div>
+    <div class="stat-lbl" data-i18n="stats.clients">Mutlu Müşteri</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">25+</div>
+    <div class="stat-lbl" data-i18n="stats.services">Hizmet Çeşidi</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">4.9★</div>
+    <div class="stat-lbl" data-i18n="stats.rating">Ortalama Puan</div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="hizmetler">
+  <div class="sec-header">
+    <span class="sec-label" data-i18n="sec.services.label">Neler Sunuyoruz</span>
+    <h2 data-i18n="sec.services.title">Hizmetlerimiz</h2>
+    <div class="divider"></div>
+    <p data-i18n="sec.services.desc">Her hizmet, en kaliteli ürünler ve uzman eller ile sunulmaktadır.</p>
+  </div>
+  <div class="services-grid">
+
+    <!-- Saç Kesimi: image shows a professional salon haircut/styling session -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80"
+             data-i18n-alt="s1.title" alt="Saç Kesimi & Şekillendirme" />
+        <span class="service-badge" data-i18n="badge.popular">Popüler</span>
+      </div>
+      <div class="service-body">
+        <h3 data-i18n="s1.title">Saç Kesimi & Şekillendirme</h3>
+        <p data-i18n="s1.desc">Yüz hatlarınıza uygun modern kesim ve profesyonel şekillendirme.</p>
+        <div class="service-footer">
+          <div class="price">250 ₺ <span class="from" data-i18n="price.from">den başlayan</span></div>
+          <div class="duration">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="s1.duration">45 dk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Saç Boyama: image shows hair coloring/balayage treatment -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80"
+             data-i18n-alt="s2.title" alt="Saç Boyama & Balayage" />
+      </div>
+      <div class="service-body">
+        <h3 data-i18n="s2.title">Saç Boyama & Balayage</h3>
+        <p data-i18n="s2.desc">Ombre, balayage, highlights ve tam boya seçenekleriyle hayalinizdeki renk.</p>
+        <div class="service-footer">
+          <div class="price">600 ₺ <span class="from" data-i18n="price.from">den başlayan</span></div>
+          <div class="duration">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="s2.duration">2–3 sa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cilt Bakımı: image shows facial/skin care treatment -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?w=600&q=80"
+             data-i18n-alt="s3.title" alt="Cilt Bakımı & Maske" />
+        <span class="service-badge" data-i18n="badge.new">Yeni</span>
+      </div>
+      <div class="service-body">
+        <h3 data-i18n="s3.title">Cilt Bakımı & Maske</h3>
+        <p data-i18n="s3.desc">Derin temizlik, nem, anti-aging ve aydınlatıcı cilt bakım protokolleri.</p>
+        <div class="service-footer">
+          <div class="price">450 ₺ <span class="from" data-i18n="price.from">den başlayan</span></div>
+          <div class="duration">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="s3.duration">60 dk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manikür: image shows nail manicure/nail art -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="https://plus.unsplash.com/premium_photo-1671719428436-806b92f38a50?w=600&q=80"
+             data-i18n-alt="s4.title" alt="Manikür & Nail Art" />
+      </div>
+      <div class="service-body">
+        <h3 data-i18n="s4.title">Manikür & Nail Art</h3>
+        <p data-i18n="s4.desc">Kalıcı oje, jel tırnak, nail art tasarım ve klasik manikür hizmetleri.</p>
+        <div class="service-footer">
+          <div class="price">200 ₺ <span class="from" data-i18n="price.from">den başlayan</span></div>
+          <div class="duration">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="s4.duration">50 dk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kaş & Kirpik: image shows eyebrow/lash beauty treatment -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="https://plus.unsplash.com/premium_photo-1661501523837-083813c782d2?w=600&q=80"
+             data-i18n-alt="s5.title" alt="Kaş Tasarımı & Kirpik" />
+      </div>
+      <div class="service-body">
+        <h3 data-i18n="s5.title">Kaş Tasarımı & Kirpik</h3>
+        <p data-i18n="s5.desc">İpek kirpik, lifting, kaş laminasyonu ve microblading uygulamaları.</p>
+        <div class="service-footer">
+          <div class="price">350 ₺ <span class="from" data-i18n="price.from">den başlayan</span></div>
+          <div class="duration">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="s5.duration">75 dk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Masaj: image shows relaxing massage treatment -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80"
+             data-i18n-alt="s6.title" alt="Masaj & Vücut Bakımı" />
+        <span class="service-badge" data-i18n="badge.featured">Öne Çıkan</span>
+      </div>
+      <div class="service-body">
+        <h3 data-i18n="s6.title">Masaj & Vücut Bakımı</h3>
+        <p data-i18n="s6.desc">Klasik, aromaterapi ve lenf drenaj masajı ile tam vücut dinginliği.</p>
+        <div class="service-footer">
+          <div class="price">500 ₺ <span class="from" data-i18n="price.from">den başlayan</span></div>
+          <div class="duration">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="s6.duration">60 dk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── PRICE TABLE ── -->
+<section id="fiyatlar">
+  <div class="sec-header">
+    <span class="sec-label" data-i18n="sec.prices.label">Şeffaf Fiyatlandırma</span>
+    <h2 data-i18n="sec.prices.title">Fiyat Listesi</h2>
+    <div class="divider"></div>
+    <p data-i18n="sec.prices.desc">Tüm fiyatlarımız hizmet kalitesini yansıtır ve değişkenlik göstermez.</p>
+  </div>
+  <div class="price-wrap">
+
+    <div class="price-category">
+      <h3 class="price-cat-title">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 4-3.5 8-7 11C8.5 17 5 13 5 9a7 7 0 0 1 7-7z"/></svg>
+        <span data-i18n="pcat1">Saç Hizmetleri</span>
+      </h3>
+      <div class="price-row">
+        <div>
+          <div class="price-row-name" data-i18n="p1.name">Saç Kesimi (Kadın)</div>
+          <div class="price-row-detail" data-i18n="p1.detail">Yıkama + Fön dahil</div>
+        </div>
+        <div class="price-row-price">250 – 350 ₺</div>
+      </div>
+      <div class="price-row">
+        <div>
+          <div class="price-row-name" data-i18n="p2.name">Saç Kesimi (Erkek)</div>
+        </div>
+        <div class="price-row-price">150 – 200 ₺</div>
+      </div>
+      <div class="price-row">
+        <div>
+          <div class="price-row-name" data-i18n="p3.name">Saç Boyama (Tek Renk)</div>
+          <div class="price-row-detail" data-i18n="p3.detail">Uzunluğa göre değişir</div>
+        </div>
+        <div class="price-row-price">600 – 900 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p4.name">Balayage / Ombre</div></div>
+        <div class="price-row-price">1.000 – 1.600 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p5.name">Keratin Bakım</div></div>
+        <div class="price-row-price">800 – 1.200 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p6.name">Fön & Maşa</div></div>
+        <div class="price-row-price">200 – 300 ₺</div>
+      </div>
+    </div>
+
+    <div class="price-category">
+      <h3 class="price-cat-title">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+        <span data-i18n="pcat2">Cilt & Yüz Bakımı</span>
+      </h3>
+      <div class="price-row">
+        <div>
+          <div class="price-row-name" data-i18n="p7.name">Klasik Yüz Bakımı</div>
+          <div class="price-row-detail" data-i18n="p7.detail">Temizlik + nemlendirme</div>
+        </div>
+        <div class="price-row-price">450 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p8.name">Anti-Aging Bakım</div></div>
+        <div class="price-row-price">750 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p9.name">Kömür Maskesi</div></div>
+        <div class="price-row-price">350 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p10.name">Hydrafacial</div></div>
+        <div class="price-row-price">900 ₺</div>
+      </div>
+    </div>
+
+    <div class="price-category">
+      <h3 class="price-cat-title">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span data-i18n="pcat3">Tırnak & El/Ayak Bakımı</span>
+      </h3>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p11.name">Kalıcı Oje (Manikür)</div></div>
+        <div class="price-row-price">200 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p12.name">Kalıcı Oje (Pedikür)</div></div>
+        <div class="price-row-price">250 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p13.name">Jel Tırnak (Set)</div></div>
+        <div class="price-row-price">400 – 550 ₺</div>
+      </div>
+      <div class="price-row">
+        <div>
+          <div class="price-row-name" data-i18n="p14.name">Nail Art Tasarım</div>
+          <div class="price-row-detail" data-i18n="p14.detail">10 tırnak, full design</div>
+        </div>
+        <div class="price-row-price">150 – 300 ₺</div>
+      </div>
+    </div>
+
+    <div class="price-category">
+      <h3 class="price-cat-title">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span data-i18n="pcat4">Kaş, Kirpik & Epilasyon</span>
+      </h3>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p15.name">İpek Kirpik (Set)</div></div>
+        <div class="price-row-price">500 – 700 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p16.name">Kirpik Lifting</div></div>
+        <div class="price-row-price">400 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p17.name">Kaş Laminasyonu</div></div>
+        <div class="price-row-price">350 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p18.name">Ağda (Tüm Bacak)</div></div>
+        <div class="price-row-price">300 ₺</div>
+      </div>
+      <div class="price-row">
+        <div><div class="price-row-name" data-i18n="p19.name">Ağda (Koltuk Altı)</div></div>
+        <div class="price-row-price">100 ₺</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section id="galeri">
+  <div class="sec-header">
+    <span class="sec-label" data-i18n="sec.gallery.label">Çalışmalarımız</span>
+    <h2 data-i18n="sec.gallery.title">Galeri</h2>
+    <div class="divider"></div>
+    <p data-i18n="sec.gallery.desc">Gerçek müşterilerimizden ilham veren dönüşümler.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item g1">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=900&q=80"
+           data-i18n-alt="gallery.alt1" alt="Saç bakımı" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=600&q=80"
+           data-i18n-alt="gallery.alt2" alt="Manikür" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80"
+           data-i18n-alt="gallery.alt3" alt="Cilt bakımı" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80"
+           data-i18n-alt="gallery.alt4" alt="Kaş tasarımı" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80"
+           data-i18n-alt="gallery.alt5" alt="Saç boyama" />
+    </div>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section id="yorumlar">
+  <div class="sec-header">
+    <span class="sec-label" data-i18n="sec.reviews.label">Müşteri Görüşleri</span>
+    <h2 data-i18n="sec.reviews.title">Ne Diyorlar?</h2>
+    <div class="divider"></div>
+    <p data-i18n="sec.reviews.desc">Her ziyaretten sonra güvenen ve tekrar gelen müşterilerimizin sesleri.</p>
+  </div>
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="r1.text">"Balayage için çok araştırdım ve sonunda doğru yeri buldum. Renk mükemmel çıktı, saçlarım hiç zarar görmedi. Kesinlikle tavsiye ederim!"</p>
+      <div class="reviewer">
+        <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80" alt="Zeynep A." />
+        <div>
+          <div class="reviewer-name">Zeynep A.</div>
+          <div class="reviewer-tag" data-i18n="r1.tag">Saç Boyama Müşterisi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="r2.text">"Cilt bakımı için ilk kez geldim, şimdi aylık düzenli müşterisi oldum. Uzmanlar çok bilgili, skin tipime uygun bir protokol hazırladılar."</p>
+      <div class="reviewer">
+        <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?w=100&q=80" alt="Selin K." />
+        <div>
+          <div class="reviewer-name">Selin K.</div>
+          <div class="reviewer-tag" data-i18n="r2.tag">Cilt Bakımı Müşterisi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="r3.text">"İpek kirpik için farklı salonlar denedim ama Bella Studio'nun kalitesiyle kıyaslanamaz. 4 hafta boyunca hiç döküntü olmadan dayanıyor!"</p>
+      <div class="reviewer">
+        <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&q=80" alt="Merve T." />
+        <div>
+          <div class="reviewer-name">Merve T.</div>
+          <div class="reviewer-tag" data-i18n="r3.tag">Kirpik Müşterisi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★☆</div>
+      <p class="review-text" data-i18n="r4.text">"Nail art için geldim, harika tasarımlar yaptılar. Ekip çok ilgili ve sıcakkanlı. Temizlik ve hijyen konusunda da çok titizler."</p>
+      <div class="reviewer">
+        <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=100&q=80" alt="Ayşe D." />
+        <div>
+          <div class="reviewer-name">Ayşe D.</div>
+          <div class="reviewer-tag" data-i18n="r4.tag">Nail Art Müşterisi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="r5.text">"Aromaterapi masajı muhteşemdi. Bütün hafta yorgunluğum tek seansta gitti. Ortam da çok sakin ve huzurlu. Çok teşekkürler!"</p>
+      <div class="reviewer">
+        <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80" alt="Fatma Y." />
+        <div>
+          <div class="reviewer-name">Fatma Y.</div>
+          <div class="reviewer-tag" data-i18n="r5.tag">Masaj Müşterisi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="r6.text">"Kaş laminasyonu ve kirpik lifting aynı anda yaptırdım. Sonuç inanılmaz doğal ve güzel. Artık makyaj yapmadan çıkabiliyorum!"</p>
+      <div class="reviewer">
+        <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Büşra M." />
+        <div>
+          <div class="reviewer-name">Büşra M.</div>
+          <div class="reviewer-tag" data-i18n="r6.tag">Kaş & Kirpik Müşterisi</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── APPOINTMENT ── -->
+<section id="randevu">
+  <div class="randevu-inner">
+    <span class="sec-label" data-i18n="sec.appt.label">Hemen Bize Ulaşın</span>
+    <h2 data-i18n-html="sec.appt.title">Randevu Almak<br>Çok Kolay!</h2>
+    <p data-i18n="sec.appt.desc">Telefon ile bizi arayın, size uygun gün ve saati birlikte belirleyelim.</p>
+
+    <a href="tel:+905321234567" class="phone-cta">
+      <div class="phone-icon">
+        <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.7 12.1 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.31h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9A16 16 0 0 0 15 16.09l.96-.96a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7a2 2 0 0 1 1.72 2.04z"/>
+        </svg>
+      </div>
+      <div class="phone-text">
+        <div class="lbl" data-i18n="appt.phone.lbl">Randevu Hattı</div>
+        <div class="num">0532 123 45 67</div>
+      </div>
+    </a>
+
+    <div class="appt-info">
+      <div class="appt-info-item">
+        <strong data-i18n="appt.day1">Pazartesi – Cuma</strong>
+        <span>09:00 – 20:00</span>
+      </div>
+      <div class="appt-info-item">
+        <strong data-i18n="appt.day2">Cumartesi</strong>
+        <span>09:00 – 19:00</span>
+      </div>
+      <div class="appt-info-item">
+        <strong data-i18n="appt.day3">Pazar</strong>
+        <span>10:00 – 17:00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">Bella <span>Studio</span></span>
+      <p data-i18n="footer.brand.desc">Güzelliğinizi ön plana çıkarmak için buradayız. Kalite, hijyen ve müşteri memnuniyeti bizim önceliğimizdir.</p>
+      <div class="social-links">
+        <a href="#" title="Instagram">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" title="Facebook">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" title="TikTok">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.26 8.26 0 0 0 4.83 1.56V6.8a4.85 4.85 0 0 1-1.06-.11z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.col1.title">Hizmetler</h4>
+      <ul>
+        <li><a href="#hizmetler" data-i18n="footer.s1">Saç Kesimi</a></li>
+        <li><a href="#hizmetler" data-i18n="footer.s2">Saç Boyama</a></li>
+        <li><a href="#hizmetler" data-i18n="footer.s3">Cilt Bakımı</a></li>
+        <li><a href="#hizmetler" data-i18n="footer.s4">Manikür & Pedikür</a></li>
+        <li><a href="#hizmetler" data-i18n="footer.s5">Kaş & Kirpik</a></li>
+        <li><a href="#hizmetler" data-i18n="footer.s6">Masaj</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.col2.title">Hızlı Bağlantılar</h4>
+      <ul>
+        <li><a href="#hizmetler" data-i18n="footer.l1">Hizmetlerimiz</a></li>
+        <li><a href="#fiyatlar" data-i18n="footer.l2">Fiyat Listesi</a></li>
+        <li><a href="#galeri" data-i18n="footer.l3">Galeri</a></li>
+        <li><a href="#yorumlar" data-i18n="footer.l4">Yorumlar</a></li>
+        <li><a href="#randevu" data-i18n="footer.l5">Randevu Al</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.col3.title">İletişim</h4>
+      <address>
+        <strong style="color:#fff" data-i18n="footer.addr.label">Adres</strong><br>
+        Bahçelievler Mah. Gül Sokak No:12<br>
+        Kadıköy / İstanbul<br><br>
+        <strong style="color:#fff" data-i18n="footer.phone.label">Telefon</strong><br>
+        <a href="tel:+905321234567">0532 123 45 67</a><br><br>
+        <strong style="color:#fff" data-i18n="footer.email.label">E-posta</strong><br>
+        <a href="mailto:info@bellastudio.com">info@bellastudio.com</a>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer.rights">© 2024 Bella Studio. Tüm hakları saklıdır.</span>
+    <span data-i18n="footer.legal">Gizlilik Politikası · Kullanım Koşulları</span>
+  </div>
+</footer>
+
+<!-- ── SCROLL TOP ── -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        data-i18n-title="scrolltop.title" title="Yukarı çık">
+  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="locales/tr.js"></script>
+<script src="locales/en.js"></script>
+<script src="locales/de.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
